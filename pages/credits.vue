@@ -1,59 +1,139 @@
 <template>
   <main>
-    <div class="places">
-      <p class="top">&nbsp;</p>
-      <h1>Credits</h1>
-      <p>
-        <strong>&nbsp;</strong>
-      </p>
-    </div>
-
-    <section class="breweries" id="breweries">
-      <ul>
-        <li>
-          <figure>
-            <!-- Photo by Quentin Dr on Unsplash -->
-            <img src="/mickey_in_fantasyland_150x150.jpg" alt="Several hands holding beer glasses" />
-            <figcaption>
-              <h3>Mickey in Fantasyland</h3>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
+    <section>
+      <div class="places">
+        <p class="top">&nbsp;</p>
+        <h1>Credits</h1>
+        <p>
+          <strong>&nbsp;</strong>
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card">
           <figure>
             <!-- Photo by Drew Farwell on Unsplash -->
-            <img src="/mickey_in_fantasyland_150x150.jpg" alt="Several hands holding beer glasses" />
+            <img src="/darth_vader.jpg" alt="Several hands holding beer glasses" />
+            <figcaption>
+              <h3>Darth Vader during the Jedi Academy show at Disney Hollywood Studios</h3>
+            </figcaption>
+          </figure>
+          <p>Jeff Christiansen</p>
+          <a href="https://flic.kr/p/FFYbbj">Visit Website</a>
+        </div>
+        <div class="card">
+          <figure>
+            <!-- Photo by Drew Farwell on Unsplash -->
+            <img src="/2520258652_f1cebb76a5_q.jpg" alt="Several hands holding beer glasses" />
+            <figcaption>
+              <h3>WDW Yellow Monorail</h3>
+            </figcaption>
+          </figure>
+          <p>George Thomas</p>
+          <a href="https://flic.kr/p/4QGZ6o" target="_blank">Visit Website</a>
+        </div>
+        <div class="card">
+          <figure>
+            <!-- Photo by Drew Farwell on Unsplash -->
+            <img src="/dragon_150x150.jpg" alt="Several hands holding beer glasses" />
+            <figcaption>
+              <h3>When a Dragon rolls down Main Street</h3>
+            </figcaption>
+          </figure>
+          <p>Chad Sparkes</p>
+          <a href="https://flic.kr/p/XLkhLr" target="_blank">Visit Website</a>
+        </div>
+        <div class="card">
+          <figure>
+            <!-- Photo by Drew Farwell on Unsplash -->
+            <img src="/poly_150x150.jpg" alt="Several hands holding beer glasses" />
             <figcaption>
               <h3>Chad Sparkes</h3>
             </figcaption>
           </figure>
-          <p>Chad Sparkes</p>
-          <a href="https://flic.kr/p/FFYbbj">Visit Website</a>
-        </li>
-        <li>
+          <p>Disney's Polynesian Village Resort</p>
+          <a href="https://flic.kr/p/FFYbbj" target="_blank">Visit Website</a>
+        </div>
+        <div class="card">
           <figure>
-            <!-- Photo by Rawpixel on Unsplash -->
-            <img
-              src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80"
-              alt="Three different glasses of beer"
-            />
+            <!-- Photo by Drew Farwell on Unsplash -->
+            <img src="/night_monorail_150x150.jpg" alt="Several hands holding beer glasses" />
             <figcaption>
-              <h3>Vast cosmic arena</h3>
+              <h3>Norm Lanier</h3>
             </figcaption>
           </figure>
-          <p>carfull...from Wyoming</p>
-          <a href="https://flic.kr/p/dWBnrL">Visit Website</a>
-        </li>
-        <li>
+          <p>Night Monorail</p>
+          <a href="https://flic.kr/p/CYB3Yz" target="_blank">Visit Website</a>
+        </div>
+        <div class="card">
           <figure>
-            <!-- Photo by Quentin Dr on Unsplash -->
+            <!-- Photo by Drew Farwell on Unsplash -->
+            <img src="/quartet_150x150.jpg" alt="Several hands holding beer glasses" />
+            <figcaption>
+              <h3>John Lamar</h3>
+            </figcaption>
+          </figure>
+          <p>Dapper Dans on Main St.</p>
+          <a href="https://flic.kr/p/u98v" target="_blank">Visit Website</a>
+        </div>
+        <div class="card">
+          <figure>
+            <!-- Photo by Drew Farwell on Unsplash -->
+            <img src="/teacups_150x150.jpg" alt="Several hands holding beer glasses" />
+            <figcaption>
+              <h3>carfull...from Wyoming</h3>
+            </figcaption>
+          </figure>
+          <p>Teacups</p>
+          <a href="https://flic.kr/p/dWBnrL" target="_blank">Visit Website</a>
+        </div>
+        <div class="card">
+          <figure>
+            <!-- Photo by Drew Farwell on Unsplash -->
+            <img src="/wdw_150x150.jpg" alt="Several hands holding beer glasses" />
+            <figcaption>
+              <h3>Jonathan</h3>
+            </figcaption>
+          </figure>
+          <p>WDW</p>
+          <a href="https://flic.kr/p/5ExU6J" target="_blank">Visit Website</a>
+        </div>
+        <div class="card">
+          <figure>
+            <!-- Photo by Drew Farwell on Unsplash -->
+            <img src="/spaceship_earth_150x150.jpg" alt="Several hands holding beer glasses" />
+            <figcaption>
+              <h3>WDW</h3>
+            </figcaption>
+          </figure>
+          <p>Chad Sparkes</p>
+          <a
+            href="https://www.flickr.com/search/?media=photos&license=2%2C3%2C4%2C5%2C6%2C9&orientation=landscape%2Cpanorama&advanced=1&text=wdw "
+            target="_blank"
+          >Visit Website</a>
+        </div>
+        <div class="card">
+          <figure>
+            <!-- Photo by Drew Farwell on Unsplash -->
             <img src="/mickey_in_fantasyland_150x150.jpg" alt="Several hands holding beer glasses" />
             <figcaption>
-              <h3>Mickey in Fantasyland</h3>
+              <h3>Joe Penniston</h3>
             </figcaption>
           </figure>
-        </li>
-        <li>
+          <p>Daily Disney - Mickey in Fantasyland</p>
+          <a href="https://flic.kr/p/6Dp8NC">Visit Website</a>
+        </div>
+        <div class="card">
+          <figure>
+            <!-- Photo by Drew Farwell on Unsplash -->
+            <img src="/dawn_150x150.jpg" alt="Several hands holding beer glasses" />
+            <figcaption>
+              <h3>Chad Sparkes</h3>
+            </figcaption>
+          </figure>
+          <p>The Arrival of December</p>
+          <a href="https://flic.kr/p/PKQ2Mo">Visit Website</a>
+        </div>
+        <div class="card">
           <figure>
             <!-- Photo by Drew Farwell on Unsplash -->
             <img src="/teacups_150x150.jpg" alt="Several hands holding beer glasses" />
@@ -63,19 +143,8 @@
           </figure>
           <p>Chad Sparkes</p>
           <a href="https://flic.kr/p/FFYbbj">Visit Website</a>
-        </li>
-        <li>
-          <figure>
-            <!-- Photo by Rawpixel on Unsplash -->
-            <img src="/wdw_150x150.jpg" alt="Three different glasses of beer" />
-            <figcaption>
-              <h3>WDW logo</h3>
-            </figcaption>
-          </figure>
-          <p>carfull...from Wyoming</p>
-          <a href="https://flic.kr/p/dWBnrL">Visit Website</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
   </main>
 </template>
@@ -127,6 +196,10 @@ p,
 }
 
 /* breweries styles */
+ol,
+ul {
+  list-style: none;
+}
 .breweries {
   //   padding: 2rem;
 }
@@ -177,5 +250,18 @@ p,
 .breweries > ul > li > a {
   padding: 0.5rem 1rem;
   margin: 0.5rem;
+}
+.card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 </style>
