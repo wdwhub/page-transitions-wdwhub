@@ -1,11 +1,12 @@
 <template>
   <transition-group tag="div">
-    <div v-for="(user, i) in users" 
+    <div
+      v-for="(user, i) in users"
       @click="changeUser(i)"
-      :key="user.name" 
+      :key="user.name"
       :class="[user === selectedUser ? activeUser : secondaryUser, `profile-${i}`]"
       :ref="`profile${i}`"
-    > 
+    >
       <div class="online"></div>
       <img :src="user.img" />
     </div>
@@ -36,8 +37,7 @@
       <p class="map-pin">
         <icon-base icon-name="map pin" width="18" height="18">
           <icon-map-pin />
-        </icon-base>
-        United States
+        </icon-base>Lake Beuna Vista
       </p>
 
       <p class="calendar">
@@ -51,12 +51,12 @@
 </template>
 
 <script>
-import { mapState, mapGetters } from 'vuex'
-import IconBase from './IconBase.vue'
-import IconMail from './IconMail.vue'
-import IconPlus from './IconPlus.vue'
-import IconMapPin from './IconMapPin.vue'
-import IconCalendar from './IconCalendar.vue'
+import { mapState, mapGetters } from "vuex";
+import IconBase from "./IconBase.vue";
+import IconMail from "./IconMail.vue";
+import IconPlus from "./IconPlus.vue";
+import IconMapPin from "./IconMapPin.vue";
+import IconCalendar from "./IconCalendar.vue";
 
 export default {
   components: {
@@ -69,83 +69,83 @@ export default {
   data() {
     return {
       following: false,
-      follow: 'follow',
-      followclass: 'active-follow',
-      activeUser: 'profile-photo',
-      secondaryUser: 'profile-photo-secondary'
-    }
+      follow: "follow",
+      followclass: "active-follow",
+      activeUser: "profile-photo",
+      secondaryUser: "profile-photo-secondary"
+    };
   },
   computed: {
-    ...mapState(['page', 'users', 'indexedUser']),
-    ...mapGetters(['selectedUser'])
+    ...mapState(["page", "users", "indexedUser"]),
+    ...mapGetters(["selectedUser"])
   },
   methods: {
     changeUser(i) {
-      this.$store.commit('changeUser', i)
-      if (this.page === 'group') {
-        const el = this.$refs.profile0[0]
+      this.$store.commit("changeUser", i);
+      if (this.page === "group") {
+        const el = this.$refs.profile0[0];
         el.style.transform = `translate3d(${-70 +
-          this.indexedUser * 55}px, -70px, 0) scale(0.25)`
+          this.indexedUser * 55}px, -70px, 0) scale(0.25)`;
       }
     },
     toggleFollow() {
       if (this.following) {
-        this.$store.commit('removeFollower')
+        this.$store.commit("removeFollower");
       } else {
-        this.$store.commit('addFollower')
+        this.$store.commit("addFollower");
       }
-      this.following = !this.following
+      this.following = !this.following;
     },
     addPlace() {
-      if (!this.saved && this.page !== 'index') {
-        this.addAnimation()
-        this.saved = true
+      if (!this.saved && this.page !== "index") {
+        this.addAnimation();
+        this.saved = true;
       } else {
-        this.removeAnimation()
-        this.saved = false
+        this.removeAnimation();
+        this.saved = false;
       }
     },
     addAnimation() {
       //I love prettier, but it does make this animation code a lot longer and less legible than it could be :/
-      const tl = new TimelineMax()
+      const tl = new TimelineMax();
 
-      tl.add('start')
+      tl.add("start");
       tl.to(
-        '.plus',
+        ".plus",
         0.75,
         {
           rotation: -360,
-          transformOrigin: '50% 50%',
+          transformOrigin: "50% 50%",
           ease: Expo.easeOut
         },
-        'start'
-      )
+        "start"
+      );
       tl.to(
-        '.line2',
+        ".line2",
         0.7,
         {
           scaleY: 0.5,
           x: -2,
           rotation: -45,
-          transformOrigin: '50% 100%',
+          transformOrigin: "50% 100%",
           ease: Expo.easeOut
         },
-        'start'
-      )
+        "start"
+      );
       tl.to(
-        '.line1',
+        ".line1",
         0.7,
         {
           rotation: -50,
           x: 7,
           scaleX: 3,
-          transformOrigin: '50% 100%',
+          transformOrigin: "50% 100%",
           ease: Expo.easeOut
         },
-        'start'
-      )
+        "start"
+      );
       tl.fromTo(
-        '.saveinfo',
+        ".saveinfo",
         0.5,
         {
           autoAlpha: 0
@@ -154,65 +154,65 @@ export default {
           autoAlpha: 1,
           ease: Sine.easeOut
         },
-        'start'
-      )
+        "start"
+      );
       tl.to(
-        '.saveinfo',
+        ".saveinfo",
         0.4,
         {
           autoAlpha: 0,
           ease: Expo.easeIn
         },
-        'start+=1'
-      )
+        "start+=1"
+      );
 
-      return tl
+      return tl;
     },
     removeAnimation() {
-      const tl = new TimelineMax()
+      const tl = new TimelineMax();
 
-      tl.add('begin')
+      tl.add("begin");
       tl.to(
-        '.plus',
+        ".plus",
         0.75,
         {
           rotation: 0,
-          transformOrigin: '50% 50%',
+          transformOrigin: "50% 50%",
           ease: Expo.easeOut
         },
-        'begin'
-      )
+        "begin"
+      );
       tl.to(
-        '.line2',
+        ".line2",
         0.7,
         {
           scaleY: 1,
           x: 0,
           rotation: 0,
-          transformOrigin: '50% 100%',
+          transformOrigin: "50% 100%",
           ease: Expo.easeOut
         },
-        'begin'
-      )
+        "begin"
+      );
       tl.to(
-        '.line1',
+        ".line1",
         0.7,
         {
           rotation: 0,
           x: 0,
           scaleX: 1,
-          transformOrigin: '50% 100%',
+          transformOrigin: "50% 100%",
           ease: Back.easeOut
         },
-        'begin'
-      )
+        "begin"
+      );
 
-      tl.timeScale(1.2)
+      tl.timeScale(1.2);
 
-      return tl
+      return tl;
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
