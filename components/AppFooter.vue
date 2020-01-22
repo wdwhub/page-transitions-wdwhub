@@ -1,6 +1,7 @@
 <template>
   <footer>
-    Made by <a href="https://twitter.com/sarah_edo" target="_blank">sarah_edo</a>. This project is open source, visit <a href="https://github.com/sdras/page-transitions-travelapp" target="_blank">the repo.</a>
+    This site would not be possible without Creative Commons and Open Source licensing. Please check out the
+    <nuxt-link exact to="/credits">credits page</nuxt-link>.
   </footer>
 </template>
 

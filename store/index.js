@@ -35,7 +35,7 @@ const createStore = () => {
           img: "/profile4.jpg",
           location: "San Francisco",
           bio:
-            "Prone to fits of apathy. Writer. Devoted gamer. Web scholar. Hipster-friendly music advocate. Problem solver. Student. Twitter fanatic.",
+            "Kind person, likes to play musical soundtracks at full volume to bug her brother. Forgetful. Likes: Ducks, dog and Musicals",
           following: 590,
           followers: 1705,
           photos: 45,
@@ -62,7 +62,7 @@ const createStore = () => {
           rating: 8.9,
           img: "/honolulu.jpg",
           description:
-            "If you can, you really should stay at a resort on Disney property.  You truly can stay in the magic that way, especially if you have the Disney Dining Plan.  That way, all the cares of the everyday world are left at home.  So, catch a monorail or hop aboard the skyway and leave the driving to friendly cast members."
+            "If you can, you really should stay at a resort on Disney property.  You truly can stay in the magic, especially if you have the Disney Dining Plan.  That way, all the cares of the everyday world are left at home.  So, catch a monorail or hop aboard the Skyway and leave the driving to friendly cast members."
         },
         {
           name: "Hollywood Studios",
